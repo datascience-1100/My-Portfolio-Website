@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* 1. Universal Black Theme */
+			#header h2, h4, h5, .icons li a:hover, ul.contact li:before {
+				color: #000000 !important;
+			}
+
+			/* 2. Fix the Red Hamburger Menu Icon */
+			#sidebar .toggle:before {
+				color: #000000 !important;
+				background-color: transparent !important;
+			}
+
+			/* 3. Remove Gaps and Lines */
+			#header {
+				border-bottom: none !important;
+				margin-bottom: 0 !important;
+				padding-bottom: 1em !important;
+			}
+
+			/* 4. SIDE-BY-SIDE GRID SETUP */
+			.projects-container {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2em; /* Space between projects */
+				justify-content: flex-start;
+			}
+
+			.projects-container section {
+				flex: 1 1 calc(45% - 1em); /* Two projects per row */
+				min-width: 300px; /* Prevents them from getting too squashed */
+				padding: 0 !important;
+				border-top: none !important;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* 5. Project Content Styling */
+			h4 {
+				margin-bottom: 0.5em !important;
+				font-size: 1.2em !important;
+			}
+
+			.project-image {
+				margin-top: auto; /* Pushes image to the bottom of the card if text is short */
+			}
+
+			.project-image img {
+				width: 100%;
+				max-width: 100%; /* Allows image to fill the card width */
+				height: 200px; /* Fixed height for uniformity */
+				object-fit: cover; /* Crops image to fit the box nicely */
+				border-radius: 4px;
+				display: block;
+				margin-top: 1em;
+			}
+
+			/* Clean up Sidebar spacing */
+			#sidebar .inner section {
+				padding: 1.5em 0 !important;
+				border-top: none !important;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+				<div id="main">
+						<div class="inner">
+							<header id="header">
+									<h2>Projects</h2>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/rinamondal/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://medium.com/@datasciencejourney100_83560" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<div class="projects-container">
+								
+								<section>
+									<h4>Penguin Data Set Analysis</h4>							
+									<p>This project aims to find hidden patterns in the Penguin dataset, focusing on behavior patterns to help organizations.</p>
+									
+									<div class="project-image">
+										<a href="https://github.com/datascience-1100/Finding-insights-about-Penguins">
+											<img src="Penguins.jpg" alt="Penguin Data Analysis Project">
+										</a>
+									</div>							
+								</section>
+
+								<section>
+									<h4>NYC Taxi Trip Duration</h4>							
+									<p>This Project predicts the total ride duration of taxi trips in New York City using regression techniques.</p>
+									
+									<div class="project-image">
+										<a href="https://github.com/datascience-1100/New-York-City-Taxi-Trip-Duration">
+											<img src="taxi.jpg" alt="New York City Taxi Project">
+										</a>
+									</div>							
+								</section>
+
+								<section>
+									<h4>Employee Attrition Rate</h4> 							
+									<p>Predicting whether an employee will leave the company, assisting HR in identifying high-risk factors.</p>
+									
+									<div class="project-image">
+										<a href="https://github.com/datascience-1100/End-to-End-Employee-Attrition-Rate-Project">
+											<img src="HR.jpg" alt="HR Project">
+										</a>
+									</div>							
+								</section>
+
+
+
+							</div> </div>
+					</div>
+
+				<div id="sidebar">
+						<div class="inner">
+							<nav id="menu">
+									<header class="major"></header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="Projects.html">Projects</a></li>
+										<li><a href="Blogs.html">Blogs</a></li>
+									</ul>								
+								</nav>					
+
+							<section>
+									<header class="major"></header>
+									<p>Stay Connected</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">rinam1@protonmail.com</li>
+									</ul>
+								</section>
+						</div>
+					</div>
+			</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
